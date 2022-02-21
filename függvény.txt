@@ -1,0 +1,24 @@
+Függvények, eljárások
+
+- programkód blokkok 
+- paraméterlista: Átadhatjuk az adatokat a függvénynek.
+- a függvény adhat vissza értéket
+
+Készítése:
+
+- def fügvényném():
+	print("")
+
+- a függvény készítése előbbi sorban van, mint a használata.
+
+használata:
+
+- függvény hívása: függvény neve, és zárójeles futtató operátora
+
+paraméter, argumentum:
+
+- változó darabszámú paraméter: *-al kezdjük a nevét, tuple lesz belőle
+- ** használatával dictionary-t kapunk
+- alapérték megadása: változó neve = érték
+- érték visszaadása: return kulcsó
+- üres függvény: pass kulcsszó

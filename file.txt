@@ -1,0 +1,19 @@
+Fájlok olvaása python-ban
+
+parancs: (f.read())
+- Beolvassa a file-t elejétől a végéig
+
+Adott sor beolvasása:
+parancs: (f.readline())
+
+
+Beolvasás ciklussal:
+-soronként olvas be
+f=open("demofile.txt", "r")    "r" = "read"
+for x in f:
+	print(x)
+
+
+Fájlok írása:
+
+parancs: (f.write())
