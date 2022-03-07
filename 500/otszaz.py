@@ -20,10 +20,21 @@ darab=int(input("Darabszám: "))
 
 aruindex=kosar.index(arunev)
 darablista=kosar[:aruindex]
-print(darablista)
+#print(darablista)
 vasarlasdb=darablista.count("F") +1
-print (vasarlasdb)
 
-print("5. feladat")
-print("Az első vásárlás sorszáma: " +str(vasarlasdb)
+#print("5. feladat")
+print("Az első vásárlás sorszáma: " +str(vasarlasdb))
 
+utolsoindex=0
+for i in range  (0,len(kosar)):
+      if kosar[i*-1-1]==arunev:
+          utolsoindex=len(kosar)-i
+          break
+darablista=kosar[:utolsoindex]
+vasarlasdb=darablista.count("F") + 1
+print("AZ utolsó vásárlás sorszáma: " + str(vasarlasdb))
+        
+voltf=False
+szam=0
+for e in kosar:if e =arunev:
