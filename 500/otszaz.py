@@ -1,5 +1,5 @@
 def ertek(darab):
-    if darab=1:
+    if darab==1:
         return 500
     else:
         return darab*400+150
@@ -47,7 +47,7 @@ print("AZ utolsó vásárlás sorszáma: " + str(vasarlasdb))
 voltf=False
 szam=0
 for e in kosar:
-    if e =arunev:
+    if e==arunev:
         if not voltf:
             szam=szam+1
             voltf=True
@@ -61,15 +61,30 @@ print(str(vasarlasdb)+ " darab vételekor fizetendő: "+ str(ertek(vasarlasdb)))
 darabf=0
 elozoindex=0
 keresettindex=0
-for i in range (0:len(kosar)):
+for i in range (0,len(kosar)):
     if kosar[i]=="F":
         darabf+=1
-    if darabf=sorszam
+    if darabf==sorszam:
         elozoindex=keresettindex
         keresettindex=i
         break
-    
+    if darabf==sorszam:
+        break
+print (kosar[elozoindex +1:keresettindex])
+if sorszam>1:
+    darabkosar=kosar[elozoindex+1:keresettindex]
+else:
+    darabkosar=kosar[elozoindex]
 
+stat={}
+for e in darabkosar:
+    if e in stat.keys():
+        stat[e]+=1
+    else:
+        stat[e]=1
+
+print(stat)
+    
 
 
 
