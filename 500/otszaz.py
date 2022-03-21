@@ -83,8 +83,9 @@ for e in darabkosar:
     else:
         stat[e]=1
 
-print(stat)
-    
+#print(stat)
+for e in stat:
+    print(str(stat[e]) + " "+e)
 
 
 
