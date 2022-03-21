@@ -103,4 +103,16 @@ for e in kosar:
             stat[e]+=1
         else:
             stat[e]=1
+
+f=open("osszeg.txt","W")
+for i in range(0, len(ossz)):
+    f.write(str(i+1)+ ": "+ str(ossz[i]))+"/n")
+f.close()
+
+f=open("osszeg2.txt","w")
+for i,e in enumerate(ossz):
+    f.write(str(i+1) + ": " + str(e) + "/n")
+f.close()
+
+
         
