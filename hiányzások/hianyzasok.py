@@ -1,4 +1,6 @@
+#picsku
 #rak
+
 f=open("naplo.txtx")
 adatok=f.read().split("\n")
 f.close()
