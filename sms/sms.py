@@ -31,3 +31,34 @@ print("óra:{} perc:{} telefonszám:{} üzenet:{}".format(smsek[minindex].ora,
                                                        smsek[minindex].perc,
                                                        smsek[minindex].telefonszam,
                                                        smsek[minindex].uzenet))
+
+
+stat=[0,0,0,0,0]
+
+for a in smsek:
+    if len(a.uzenet)<=20:
+        stat [0]+=1
+    elif len(a.uzenet)<=40:
+        stat[1]+=1
+    elif len(a.uzenet)<=60:
+        stat[2]+=1
+    elif len(a.uzenet)<=80:
+        stat[3]+=1
+    else:
+        stat[4]+=1
+
+print("4. feladat")
+print("1-20:{} db, 21-40:{} db, 41-60:{} db, 61-80:{} db, 81-100:{} db".format(stat[0],stat[1],stat[2],stat[3],stat[4]))
+
+stat2=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+for a in smsek:
+    stat[a.ora]+=1
+
+ossz=0
+for a in stat:
+    if a>10:
+        ossz+=a-10
+
+print("5. feladat")
+print("Ernőnek {} sms-t kell fizetnie".format(ossz))
